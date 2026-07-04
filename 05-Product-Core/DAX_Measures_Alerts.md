@@ -22,3 +22,13 @@ DIVIDE(
     [Costos Fijos Dia],
     [Margen Contribucion]
 )
+## 3. Umbrales del Semáforo de Alertas Tempranas
+* 🔴 **Rojo (Riesgo Alto):** `Ventas < [Punto Equilibrio Diario]`
+* 🟡 **Amarillo (Precaución):** `Ventas` entre el 100% y el 110% del punto de equilibrio.
+* 🟢 **Verde (Zona Segura):** `Ventas > 110%` del punto de equilibrio.
+
+### Reglas de Disparo de Alertas Diarias:
+1. **Nómina:** `Nomina > Presupuesto + 5%`
+2. **Food Cost:** `Food Cost > Objetivo + 2%`
+3. **Personal Extra:** `Horas extra > Objetivo semanal`
+4. **Compras:** `Compra extraordinaria` -> Dispara alerta inmediata.
